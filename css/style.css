@@ -103,7 +103,6 @@ li a {
 .news {
   max-width: 1000px;
   margin: 120px auto;
-  padding: 0 20px;
 }
 
 
@@ -153,6 +152,10 @@ li a {
   display: flex;
 }
 
+.about-img {
+  width: 70%;
+}
+
 .about img {
   width: 100%;
   height: auto;
@@ -160,9 +163,128 @@ li a {
 
 .about-text {
   margin: 0 60px;
+  padding-top: 180px;
 }
 
 .about p {
   font-size: 14px;
-  line-height: 2; 
+  line-height: 2;
+}
+
+/* business */
+
+.business {
+  max-width: 1000px;
+  margin: 120px auto;
+}
+
+
+.business img {
+  width: 368px;
+  height: 232px;
+  margin-bottom: 40px;
+}
+
+.business p {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.business p::before {
+  content: 'ー ';
+}
+
+.b-contents {
+  display: flex;
+  gap: 60px;
+  width: 100%;
+  justify-content: center;
+}
+
+.b-left {
+  padding-top: 120px;
+}
+
+/* company */
+
+.company {
+  max-width: 1000px;
+  margin: 120px auto;
+  position: relative;
+}
+
+.conpany-text {
+  position: absolute;
+  align-items: stretch;
+  width: 567px;
+  height: 622px;
+  background-color: white;
+  padding-left: 62px;
+}
+
+.conpany-text h2 {
+  margin-top: 100px;
+}
+
+dl {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+dt {
+  width: 100px;
+}
+
+dd {
+  width: calc(100% - 100px);
+  margin: 0;
+}
+
+dt+dd {
+  margin-bottom: 16px;
+}
+
+
+dt+dd+dd {
+  margin-left: 100px;
+}
+
+dd:not(dt + dd) {
+  margin-left: 100px;
+  margin-bottom: 6px;
+
+}
+
+.company-img {
+  width: 50%;
+  height: 50%;
+}
+
+/* footer */
+
+footer {
+  background-color: white;
+  height: 200px;
+  padding-bottom: 20px;
+}
+
+.pink {
+  margin: 0 250px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.en-info {
+  line-height: 1.5;
+}
+
+small {
+  padding-left: 250px;
+  font-size: 10px;
 }
