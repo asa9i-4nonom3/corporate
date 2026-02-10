@@ -239,22 +239,8 @@ dt {
 
 dd {
   width: calc(100% - 100px);
-  margin: 0;
-}
-
-dt+dd {
   margin-bottom: 16px;
-}
-
-
-dt+dd+dd {
   margin-left: 100px;
-}
-
-dd:not(dt + dd) {
-  margin-left: 100px;
-  margin-bottom: 6px;
-
 }
 
 .company-img {
