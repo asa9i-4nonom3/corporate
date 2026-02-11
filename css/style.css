@@ -39,6 +39,7 @@ h2::after {
 header {
   display: flex;
   align-items: center;
+  height: 80px;
 }
 
 header .container {
@@ -212,6 +213,7 @@ li a {
   max-width: 1000px;
   margin: 120px auto;
   position: relative;
+  height: 622px;
 }
 
 .conpany-text {
@@ -229,24 +231,38 @@ li a {
 
 dl {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   font-size: 14px;
 }
 
 dt {
   width: 100px;
+  line-height: 2;
 }
 
 dd {
   width: calc(100% - 100px);
   margin-bottom: 16px;
-  margin-left: 100px;
+  /* margin-left: 100px; */
+  line-height: 2;
 }
 
 .company-img {
-  width: 50%;
-  height: 50%;
+  width: 54.7%;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  aspect-ratio: 547 / 400;
 }
+
+.company-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 /* footer */
 
@@ -273,4 +289,22 @@ footer {
 small {
   padding-left: 250px;
   font-size: 10px;
+}
+
+
+/* small screen */
+
+@media (max-width: 900px) {
+  header>a {
+    display: none;
+  }
+
+  header .container {
+    display: block;
+  }
+
+  h1>img {
+    height: 20px;
+  }
+
 }
