@@ -51,8 +51,8 @@ header {
 header .container {
   display: flex;
   align-items: center;
-  padding: 0 10%;
-  max-width: 1200px;
+  padding: 0 16px;
+  max-width: 1032px;
   margin: 0 auto;
   width: 100%;
 }
@@ -164,17 +164,18 @@ li a {
 }
 
 .about-img {
-  width: 70%;
-  aspect-ratio: 770 / 400;
-
+  width: 55%;
+  height:400px
 }
 
 .about-img img {
-  width: 100%;
-  /* height: 100%; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .about-text {
+  width: 45%;
   margin: 0 60px;
   padding-top: 180px;
 }
@@ -330,5 +331,16 @@ small {
   .news-list li:not(:last-child)::after {
     content: none;
   }
+
+  .about {
+  display: block;
+}
+
+.about-img {
+  width: 100%;
+}
+
+
+
 
 }
