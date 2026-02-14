@@ -343,10 +343,27 @@ small {
 
 .about-text {
   width: 100%;
-  margin: 0 16px;
-  padding-top: 30px;
+  margin: 0;
+  padding: 30px 16px;
 }
 
+
+.business {
+  padding: 0 16px;
+}
+
+.b-contents {
+  flex-direction: column;
+  width: 100%;
+}
+
+.b-left {
+  width: 100%;
+}
+
+.b-right {
+  width: 100%;
+}
 
 
 }
