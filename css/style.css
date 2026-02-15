@@ -194,8 +194,8 @@ li a {
 
 
 .business img {
-  width: 368px;
-  height: 232px;
+  width: 100%;
+  height: auto;
   margin-bottom: 40px;
 }
 
@@ -211,13 +211,19 @@ li a {
 
 .b-contents {
   display: flex;
-  gap: 60px;
+  /* gap: 60px; */
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 10%;
 }
 
 .b-left {
   padding-top: 120px;
+  width: 46%;
+}
+
+.b-right {
+  width: 46%;
 }
 
 /* company */
@@ -371,11 +377,12 @@ small {
 
   .b-contents {
     flex-direction: column;
-    width: 100%;
+    padding: 0;
   }
 
   .b-left {
     width: 100%;
+    padding-top: 0;
   }
 
   .b-right {
