@@ -190,6 +190,7 @@ li a {
 .business {
   max-width: 1000px;
   margin: 120px auto;
+  padding: 0 16px;
 }
 
 
@@ -197,6 +198,7 @@ li a {
   width: 100%;
   height: auto;
   margin-bottom: 40px;
+  max-width: 760px;
 }
 
 .business p {
@@ -224,6 +226,14 @@ li a {
 
 .b-right {
   width: 46%;
+}
+
+.item {
+  text-align: center;
+}
+
+.item p {
+  text-align: left;
 }
 
 /* company */
@@ -320,6 +330,8 @@ small {
 }
 
 
+
+
 /* small screen */
 
 @media (max-width: 900px) {
@@ -370,10 +382,6 @@ small {
   }
 
   /* business */
-
-  .business {
-    padding: 0 16px;
-  }
 
   .b-contents {
     flex-direction: column;
