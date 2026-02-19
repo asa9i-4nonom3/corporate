@@ -248,10 +248,12 @@ li a {
 .conpany-text {
   position: absolute;
   align-items: stretch;
-  width: 567px;
+  /* width: 567px; */
+  width: calc(567 / 1000 * 100%);
   height: 622px;
   background-color: white;
-  padding-left: 62px;
+  /* padding-left: 62px; */
+  padding-left: calc(62 / 1000 * 100%);
 }
 
 .conpany-text h2 {
@@ -268,7 +270,7 @@ dl {
 }
 
 dt {
-  width: 60px;
+  width: 65px;
   line-height: 2;
 }
 
